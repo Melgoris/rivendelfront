@@ -1,0 +1,106 @@
+/* Цвета */
+:root {
+  --primary: #11998e;
+  --secondary: #38ef7d;
+  --white: #fff;
+  --gray: #9b9b9b;
+}
+
+.form_content {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 40% 40% 15%;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 13px 10px;
+}
+
+/* Основной стиль для формы */
+.form__group {
+  position: relative;
+  padding: 15px 0px 10px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  position: absolute;
+  border: 0;
+  border-bottom: 2px solid var(--gray);
+  outline: 0;
+  top: 16px;
+  font-size: 1rem;
+  color: var(--white);
+  background: transparent;
+  transition: border-color 0.2s;
+  z-index: 1;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+  font-size: 1rem;
+  cursor: text;
+  top: 10px;
+  left: 5px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.7rem;
+  color: var(--gray);
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, var(--primary), var(--secondary));
+  border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.7rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Убираем тени валидации */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+.button {
+  color: #c7c7c7;
+  transition: 400ms;
+  height: 30px;
+  width: 50px;
+  border: 1px solid #121212;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+  transition: color 0.5s ease;
+}
+
+.button:hover {
+  color: #ffffff;
+  box-shadow: 4px 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+.load_data {
+  position: relative;
+  bottom: 25px;
+  left: -5px;
+}

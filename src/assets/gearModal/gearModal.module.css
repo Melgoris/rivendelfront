@@ -1,0 +1,304 @@
+.module_box {
+  position: absolute;
+  top: 3%;
+  left: 39%;
+  width: 500px;
+  height: 650px;
+  /* background-image: url('path/to/background.jpg'); */
+  /* background-size: cover; */
+
+  /* background-position: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.Overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(295, 75%, 62%, 0.3);
+}
+
+/* .container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+   background-image: url('path/to/background.jpg'); 
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}*/
+
+.header {
+  position: absolute;
+  top: 19px;
+  width: 180px;
+  padding: 5px;
+  left: 82px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #0000008c;
+  border: 1px solid #442900;
+}
+
+.banner {
+  position: absolute;
+  width: 70px;
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+}
+
+.header_left {
+  position: absolute;
+  display: inline-flex;
+  top: 27px;
+  width: 100px;
+  align-items: baseline;
+  right: 8px;
+  height: 41px;
+  color: aliceblue;
+  padding: 0px 20px;
+  justify-content: space-between;
+  background-color: rgb(0 0 0 / 32%);
+  border-bottom: 1px solid #0c0c0c;
+  border-right: 1px solid #000000;
+}
+
+.header_left>p {
+  color: #ff710c;
+  font-weight: bold;
+}
+
+.header_right {
+  position: absolute;
+  top: 15px;
+  left: 104px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.side.right {
+  align-items: flex-end;
+}
+
+.side .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  background-color: rgb(0 0 0 / 50%);
+  width: 145px;
+  border-bottom: 1px solid #ab0000;
+}
+
+.item {
+  height: 46px;
+}
+
+/* .item>a {
+  height: 43px;
+} */
+
+.side .item .text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 11px;
+  width: 110px;
+  height: 43px;
+
+}
+
+.side.left .text {
+  margin-left: 3px;
+}
+
+.side.right .text {
+  margin-right: 3px;
+  text-align: right;
+}
+
+.center_bottom {
+  position: absolute;
+  bottom: 13px;
+  left: 46%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.center_bottom .center_left,
+.center_bottom .center_right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 170px;
+  border-bottom: 1px solid #ab0000;
+}
+
+.center_left {
+  text-align: end;
+}
+
+.center_bottom .text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 12px;
+  min-width: 120px;
+}
+
+.gearImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.closeModal {
+  position: absolute;
+  background-color: rgb(0 0 0 / 0%);
+  top: 2px;
+  right: 2px;
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+  cursor: pointer;
+  transition-delay: 0.1s;
+}
+
+.closeModal:hover {
+  fill: #000000;
+  width: 20px;
+  height: 20px;
+}
+
+/* */
+
+
+
+
+.gemContainer {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 115px;
+  flex-direction: row;
+  margin-top: -4px;
+}
+
+.enchantContainer {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 170px;
+  height: 12px;
+  /* flex-direction: row-reverse; */
+
+}
+
+.ench_right {
+  justify-content: flex-end;
+  margin-left: -25px;
+  margin-top: 43px;
+}
+
+.ench_left {
+  margin-top: 36px;
+  margin-left: -45px;
+  height: auto;
+  justify-content: flex-start;
+}
+
+.gemContReverse {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 70px;
+  flex-direction: row-reverse;
+
+  left: -70px;
+  height: 35px;
+}
+
+.enchantIcon,
+gemIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.enchantName_left {
+
+  background: #000000b3;
+  color: #1cff00;
+  font-size: 8px;
+  width: 145px;
+  border-bottom: 1px solid #ff00008f;
+  text-align: center;
+}
+
+.enchantName_right {
+  /* top: 11px; */
+  left: 29px;
+  background: #000000b3;
+  color: #1cff00;
+  font-size: 8px;
+  width: 145px;
+  border-bottom: 1px solid #ff00008f;
+  text-align: center;
+}
+
+.gems {
+  padding: 1px;
+  position: relative;
+  width: 18px;
+}
+
+.gemsLeft {
+  top: -8px;
+  left: 7px;
+}
+
+.gemsRight {
+  top: -11px;
+  left: 153px;
+}
+
+.gemImg {}
+
+.craftingQuality {
+  width: 12px;
+  margin-left: -22px;
+}
+
+.craftingQuality_ench {
+  width: 14px;
+  position: absolute;
+}
+
+.gemContainer {}
+
+.gemIcon {}
+
+.gemDesc {}
+
+/**/

@@ -1,0 +1,199 @@
+:root {
+  --color-primary: #4c4c4c;
+  --color-secondary: #a6a6a6;
+  --color-highlight: #ff3f40;
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-space-space-unit: 8px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-radius-radius-round: 50%;
+  --dl-size-size-maxcontent: 1414px;
+  --dl-space-space-halfunit: 4px;
+  --dl-space-space-tenunits: 80px;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 40px;
+  --dl-space-space-fourunits: 32px;
+  --dl-radius-radius-radius24: 24px;
+  --dl-space-space-doubleunit: 16px;
+  --dl-space-space-tripleunit: 24px;
+}
+
+/* :where(*, *::before, *::after) {
+  border-width: 0;
+  box-sizing: content-box !important;
+
+} */
+
+/* box-sizing: content-box; */
+/* @font-face {
+  font-family: 'v_Calligraphic421BT';
+  src: url('/fonts/V_CALLIGRAPHIC421BT_V1.1.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'v_Calligraphic421BT', sans-serif;
+} */
+@font-face {
+  font-family: 'Lorenzo Sans Regular';
+  src: url('/fonts/Lorenzo_Sans_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Lorenzo Sans Regular', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  user-select: none;
+
+
+}
+
+.wowhead-tooltip .wowhead-icon,
+.wowhead-tooltip .wowhead-logo {
+  display: none !important;
+}
+
+.wowhead-tooltip-powered {
+  background: '';
+  display: none !important;
+}
+
+.background-container {
+  background-image: url('./image/background.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.overlay {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+/* 
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+.list-item {
+  display: list-item;
+}
+
+/* .button {
+  color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-family: Raleway;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+} */
+
+/* .textarea {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem;
+  font-family: Raleway;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+} */
+
+/* .input {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  font-family: Raleway;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+} */
+
+
+
+.SmallCard-Heading {
+  font-size: 18px;
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.Card-Text {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.BigCard-Heading {
+  font-size: 36px;
+  font-style: normal;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.Card-Heading {
+  font-size: 24px;
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
+}

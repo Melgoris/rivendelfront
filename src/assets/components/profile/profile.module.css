@@ -1,0 +1,362 @@
+.container {
+  position: fixed;
+  left: 0;
+  min-width: 530px;
+  top: 30px;
+  min-height: 400px;
+  /* max-height: 90vh; */
+  z-index: 999;
+  background-color: #232323;
+  border-radius: 0px 40px 30px 0px;
+  box-shadow: 0px 0px 30px -9px #232323;
+  border: 1px solid #141414;
+  line-height: 16px;
+  font-size: 1rem;
+}
+
+.contentcontainer {
+  display: grid;
+  background-color: #1c1c1c;
+  width: 96%;
+  height: 96%;
+  margin-left: 10px;
+  border-radius: 0px 30px 20px 0px;
+  border: 2px solid #2a2a2a;
+}
+
+.profilecontent {
+  position: fixed;
+  background-color: white;
+  width: 170px;
+  height: 370px;
+  right: 30px;
+  top: 170px;
+  border-radius: 85px 85px 0 0;
+  box-shadow: 0px 0px 30px -9px #232323;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #cd1752;
+}
+
+/*иконка*/
+.signature {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+
+}
+
+.signature input {
+  padding: 5px;
+  width: 100%;
+  min-width: 0;
+  font-size: 12px;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center;
+  text-overflow: ellipsis;
+
+}
+
+
+.signature input:focus {
+  border-color: #007bff;
+}
+
+.icon {
+  position: absolute;
+  align-items: center;
+
+  right: 2px;
+
+
+}
+
+.icon svg {
+  cursor: pointer;
+  height: 25px;
+  transition: 300ms;
+  fill: black;
+}
+
+
+.icon svg:hover {
+  fill: #ff0714;
+}
+
+/*иконка*/
+
+.button_container {
+  height: 35px;
+  background-color: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.zaglushka {
+  height: 15px;
+}
+
+.profilepic {
+  background-color: #f7f7f7;
+  border-radius: 85px 85px 5px 5px;
+  z-index: 11111;
+
+  img {
+    background-size: cover;
+    background-position: center;
+    width: 170px;
+    height: 170px;
+    border-radius: 82px 82px 0px 0px;
+  }
+}
+
+h1 {
+  font-family: Lato;
+  font-size: 18pt;
+  color: #f97148;
+  font-weight: normal;
+  padding: 0;
+  margin: 7px 5px;
+}
+
+h2 {
+  font-family: Source Sans Pro;
+  font-size: 10pt;
+  color: #232323;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 8pt !important;
+}
+
+
+
+button {
+  background-color: #323232;
+  height: 100%;
+  width: 74%;
+  border: none;
+  font-family: lato;
+  font-size: 10pt;
+  font-weight: 400;
+  padding: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  border-right: 2px solid #196437;
+}
+
+button:hover {
+  background-color: #2b2a2a;
+}
+
+#Followers {
+  border-left: solid 1px lightgrey;
+  border-right: solid 1px lightgrey;
+}
+
+#PhotoCount {
+  border-radius: 0px 0px 0px 20px;
+}
+
+
+
+
+
+
+.stories {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* border-bottom: solid 2px #232323; */
+  padding-bottom: 30px;
+  flex-direction: column;
+}
+
+.photos {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  /* display-direction: column; */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  margin-top: -5px;
+}
+
+h3 {
+  font-family: Open Sans;
+  font-size: 10.5pt;
+  color: white;
+  font-weight: 900;
+  background-color: #282828;
+  width: 21%;
+  border-radius: 0px 0px 15px 0px;
+  text-align: center;
+  margin: 0px;
+  padding: 3px;
+}
+
+#Photos_title {
+  margin-top: 0;
+}
+
+.story {
+  width: 140px;
+  height: 31px;
+  top: 25px;
+  margin: 2px 15px;
+  padding: 0px 1px 0px 12px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+.story:hover {
+  border-radius: 0px;
+  transition: ease 500ms;
+}
+
+.photo {
+  height: auto;
+  width: 27%;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+
+.photo:hover {
+  border-radius: 0px;
+  transition: ease 500ms;
+}
+
+/* Для Firefox */
+.stories {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(103 103 103 / 56%) transparent;
+  align-content: flex-start;
+  overflow-y: scroll;
+  min-height: 150px;
+  max-height: 61vh;
+  padding-top: 6px;
+  scroll-snap-type: y mandatory;
+  scroll-snap-align: start;
+  margin-top: 15px;
+  background-color: #1c1c1c;
+  border-radius: 18px;
+}
+
+
+/* ебаная прокрутка */
+.settingsWrapper {
+  display: inline-block;
+  width: 25%;
+  height: 35px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.settingsWrapper:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.settings {
+  position: relative;
+  display: block;
+  width: 23px;
+  height: 25px;
+  top: 5px;
+  left: 0px;
+  fill: #ffdb89;
+  transition: all 0.4s ease;
+}
+
+.settingsWrapper:hover .settings {
+  fill: #ff8080;
+  transform: rotate(0.5turn);
+
+}
+
+/*profile knopka open pravo salupa*/
+.open_right_block {
+  position: absolute;
+  width: 30px;
+  background-color: #ffffff;
+  height: 20px;
+  left: -10px;
+  bottom: 60px;
+  cursor: pointer;
+  border: 2px solid #ffa5f0;
+  padding: 5px;
+  box-shadow: rgba(240, 46, 170, 0.4) -2px 2px, rgba(240, 46, 170, 0.3) -4px 4px, rgba(240, 46, 170, 0.2) -6px 6px;
+  transition: 300ms;
+}
+
+
+
+.open_right_block:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 2px -2px, rgba(240, 46, 170, 0.3) 4px -4px, rgba(240, 46, 170, 0.2) 6px -6px;
+}
+
+.open_right_block:active {
+  transform: scale(0.80);
+}
+
+
+.open_right_block_ {
+  transition: transform 0.5s ease, fill 0.5s ease;
+  width: 100%;
+  height: 100%;
+  z-index: 90000;
+  fill: #ff71c9;
+
+}
+
+.open_right_block:hover .open_right_block_ {
+  transform: scale(1.2);
+}
+
+.open_helper {
+  transform: rotate(180deg);
+}
+
+/*profile knopka open pravo salupa*/
+.add_title {
+  text-align: center;
+  padding: 10px;
+  color: #f97148;
+  background-color: #121212;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.tab_container {
+  position: absolute;
+}
+
+.calendar_container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.calendar_container>* {
+  margin: 0;
+  padding: 0;
+}
+
+.error {
+  color: #990c0c;
+  font-size: 12px;
+}

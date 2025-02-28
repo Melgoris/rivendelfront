@@ -1,0 +1,58 @@
+export const testData = [
+  [
+    ['Tuesday 04th February'],
+    ['UNSAVED HEROIC', '06:00 PM EST', '02:00', 'Xpom'],
+    ['HEROIC', '07:30 PM EST', '03:30', 'Xpom'],
+    ['HEROIC', '09:00 PM EST', '05:00', 'Xpom'],
+    ['HEROIC', '10:30 PM EST', '06:30', 'Xpom'],
+  ],
+  [
+    ['Wednesday 05th February'],
+    ['HEROIC', '07:30 PM EST', '03:30', 'Xpom'],
+    ['HEROIC', '09:00 PM EST', '05:00', 'Xpom'],
+    ['HEROIC', '10:30 PM EST', '06:30', 'Xpom'],
+    ['HEROIC', '11:59 PM EST', '08:00', 'Xpom'],
+  ],
+  [
+    ['Thursday 06th February'],
+    ['UNSAVED HEROIC', '07:30 PM EST', '03:30', 'Xpom'],
+    ['HEROIC', '09:00 PM EST', '05:00', 'Xpom'],
+    ['FP 26', '10:30 PM EST', '06:30', 'Xpom'],
+    ['UNSAVED HEROIC', '11:59 PM EST', '08:00', 'Xpom'],
+  ],
+  [
+    ['Friday 07th February'],
+    ['UNSAVED HEROIC', '07:30 PM EST', '03:30', 'Xpom'],
+    ['HEROIC', '09:00 PM EST', '05:00', 'Xpom'],
+    ['HEROIC', '10:30 PM EST', '06:30', 'Xpom'],
+    ['UNSAVED HEROIC', '11:59 PM EST', '08:00', 'Xpom'],
+  ],
+  [
+    ['Saturday 08th February'],
+    ['UNSAVED HEROIC', '07:30 PM EST', '03:30', 'Xpom'],
+    ['HEROIC', '09:00 PM EST', '05:00', 'Xpom'],
+    ['HEROIC', '10:15 PM EST', '06:15', 'Xpom'],
+    ['HEROIC', '11:30 PM EST', '07:30', 'Xpom'],
+  ],
+  [
+    ['Sunday 09th February'],
+    ['UNSAVED HEROIC', '07:30 PM EST', '03:30', 'Xpom'],
+    ['HEROIC', '09:00 PM EST', '05:00', 'Xpom'],
+    ['HEROIC', '10:30 PM EST', '06:30', 'Xpom'],
+    ['HEROIC', '11:59 PM EST', '08:00', 'Xpom'],
+  ],
+  [
+    ['Monday 10th February'],
+    ['Mythic ATP 4/8', '07:30 PM EST', '03:30', 'Xpom'],
+    ['Mythic ATP/FP 4/8', '08:30 PM EST', '04:30', 'Xpom'],
+    ['HEROIC', '10:00 PM EST', '06:00', 'Xpom'],
+    ['HEROIC', '11:30 PM EST', '07:30', 'Xpom'],
+  ],
+  [
+    ['Tuesday 11th February'],
+    ['Saturday 08th February          05:00 PM EST'],
+    ['Saturday 08th February             08:00 PM EST'],
+    ['Saturday 08th February     10:00 PM EST'],
+    ['Saturday 09th February         05:00 PM EST'],
+  ],
+]

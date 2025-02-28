@@ -1,0 +1,446 @@
+/* Общие стили */
+
+.navbar p {
+  margin: 0;
+  font-size: 1.11rem;
+}
+
+/* Ссылки */
+.navbar a {
+  color: hsl(237, 94%, 81%);
+  font-size: 1.11rem;
+  text-decoration: underline;
+}
+
+.navbar a:visited {
+  color: hsla(237, 94%, 81%, 0.5);
+}
+
+/* Кнопки */
+.navbar button {
+  padding: 0.8em 1.2em;
+  border: 1px solid hsl(0deg 0% 16.54%);
+  background-color: hsl(290.77deg 8.92% 13.01%);
+  font-size: 1.11rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.navbar button:focus {
+  box-shadow:
+    0 0 0 2px hsl(0, 0%, 0%),
+    0 0 0 3px hsl(0, 0%, 100%);
+  border: 1px solid transparent;
+}
+
+/* Списки */
+.navbar ul,
+.navbar ol {
+  margin: 1em 0;
+}
+
+/* Формы */
+.navbar form {
+  margin: 0;
+}
+
+.navbar fieldset {
+  margin: 0;
+  padding: 0.5em 0;
+  border: none;
+}
+
+.navbar input {
+  padding: 0.8em 1.2em;
+  font-size: 1.11rem;
+  background-color: hsl(10, 28%, 93%);
+  border: 2px solid hsl(10, 28%, 93%);
+  outline: none;
+}
+
+.navbar textarea {
+  padding: 0.8em 1.2em;
+  font-size: 1.11rem;
+  font-family: "Poppins";
+  background-color: hsl(10, 28%, 93%);
+  border: 2px solid hsl(10, 28%, 93%);
+  outline: none;
+}
+
+.navbar input,
+.navbar textarea {
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar input:hover,
+.navbar input:focus,
+.navbar textarea:hover,
+.navbar textarea:focus {
+  box-shadow:
+    0 0 0 2px hsl(0, 0%, 0%),
+    0 0 0 3px hsl(0, 0%, 100%);
+  border: 2px solid transparent;
+}
+
+.navbar select {
+  padding: 0.8em 1.2em;
+  border: 1px solid hsl(0, 0%, 0%);
+  font-size: 1.11rem;
+  outline: none;
+}
+
+/* Глобальные классы */
+
+/* Flexbox */
+.flexbox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.flexbox_left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexbox_right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Flex Columns */
+.flexbox_col {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexbox_col_left {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flexbox_col_left_ns {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flexbox_col_right {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flexbox_col_start_center {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Пространство между элементами */
+.flexbox_space_bet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ширина */
+.view-width {
+  width: 70%;
+}
+
+/* Navbar */
+.navbar {
+  top: 0;
+  padding: 0px;
+  width: 5em;
+  height: 400px;
+  background-color: hsl(256, 12%, 12%);
+  transition: width 0.35s cubic-bezier(0.175, 0.685, 0.32, 1);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.navbar:hover {
+  width: 16em;
+}
+
+.navbar::-webkit-scrollbar-track {
+  background-color: hsl(256, 12%, 12%);
+}
+
+.navbar::-webkit-scrollbar {
+  width: 8px;
+  background-color: hsl(256, 12%, 12%);
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background-color: hsl(237, 94%, 81%);
+}
+
+.navbar_items {
+  margin: 0;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  top: 0;
+  list-style-type: none;
+}
+
+/* Логотип */
+.navbar_logo {
+  margin: 0 0 2em 0;
+  width: 100%;
+  height: 5em;
+  background: hsl(256, 10%, 10%);
+}
+
+.navbar_logo>.navbar_item_inner {
+  width: calc(5rem - 8px);
+}
+
+.navbar_logo>.navbar_item_inner:hover {
+  background-color: transparent;
+}
+
+.navbar_logo>.navbar_item_inner>svg {
+  height: 2em;
+  fill: hsl(43.14deg 64.64% 75.51%);
+}
+
+/* Элементы Navbar */
+.navbar_item {
+  padding: 0 0.5em;
+  width: 100%;
+  cursor: pointer;
+}
+
+.navbar_item_inner {
+  padding: 1em 0;
+  width: 100%;
+  position: relative;
+  color: hsl(0, 0%, 50%);
+  border-radius: 0.25em;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.175, 0.685, 0.32, 1);
+}
+
+.navbar_item_inner:hover {
+  color: hsl(0, 0%, 100%);
+  background: hsl(257, 11%, 16%);
+  box-shadow: 0 17px 30px -10px hsla(0, 0%, 0%, 0.25);
+}
+
+.navbar_item_inner_icon_wrapper {
+  width: calc(5rem - 1em - 8px);
+  position: relative;
+}
+
+.navbar_item_inner_icon_wrapper ion_icon {
+  position: absolute;
+  font-size: calc(2.4rem - 1rem);
+}
+
+.link_text {
+  margin: 0;
+  width: 0;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.35s cubic-bezier(0.175, 0.685, 0.32, 1);
+  overflow: hidden;
+  opacity: 0;
+}
+
+.navbar:hover .link_text {
+  width: calc(100% - calc(5rem - 8px));
+  opacity: 1;
+}
+
+/*инпуты*/
+/* Общий контейнер */
+.formContent {
+  position: absolute;
+  display: flex;
+  gap: 16px;
+  width: 300px;
+  margin: 0 auto;
+  background-color: #3a3a3a;
+  right: 65px;
+  top: 60px;
+  z-index: 999;
+  border: 2px solid #8b8b8b;
+  padding: 15px 10px;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+/* Группа формы */
+.formGroup {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Поле ввода */
+.formField {
+  width: 96%;
+  padding: 7px 6px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Фокусное состояние для инпута */
+.formField:focus {
+  border-color: #007bff;
+}
+
+/* Метка внутри поля */
+.formLabel {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Когда поле активно или заполнено */
+.formField:focus~.formLabel,
+.formField:not(:placeholder-shown)~.formLabel {
+  top: -8px;
+  left: 12px;
+  font-size: 12px;
+  color: #007bff;
+  background-color: transparent;
+  padding: 0 4px;
+}
+
+/* Узкие инпуты */
+.formGroupInline {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.formGroupInline .formField {
+  width: 40px;
+  flex-shrink: 0;
+}
+
+.formGroupInline .formLabel {
+  position: static;
+  transform: none;
+  font-size: 16px;
+  color: #fff;
+  margin-right: 8px;
+  top: auto;
+  left: auto;
+}
+
+/* Кнопка */
+.button {
+  padding: 10px 16px;
+  font-size: 16px;
+  color: white;
+  background-color: #2c2c2c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #282727;
+}
+
+.button:active {
+  background-color: #5a5a5a;
+}
+
+.button:focus {
+  outline: 2px solid #282727;
+  outline-offset: 2px;
+}
+
+.formField::placeholder {
+  color: transparent;
+}
+
+.close_icon {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+  cursor: pointer;
+}
+
+/*инпуты*/
+/*выпадающее меню сложность рейда*/
+.item_block {
+  position: relative;
+}
+
+.icon,
+.icon_list {
+  position: absolute;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.sort_popup {
+  position: absolute;
+  top: 20px;
+  left: -1px;
+  width: 100px;
+  z-index: 999;
+  color: #7c7c7c;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 2px 13px rgb(235 13 13 / 50%);
+}
+
+.sort_popup ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.sort_popup ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sort_popup ul li.active {
+  background-color: #303030;
+  color: #fff;
+}
+
+.sort_popup ul li:hover {
+  background-color: #303030;
+  color: #fff;
+}
+
+/*выпадающее меню сложность рейда*/

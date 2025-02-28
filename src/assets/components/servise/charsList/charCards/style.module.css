@@ -1,0 +1,170 @@
+/* :root {
+  --background: white;
+
+  --primary: #ff1ead;
+  --secondary: #1effc3;
+
+  --card-size: 300px;
+} */
+
+/* body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: var(--background);
+  font-family: 'Source Code Pro', monospace;
+
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+
+
+
+
+.char_card_details {
+  padding: 1rem;
+  margin-top: -35px;
+}
+
+.char_name {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.player_name {
+  position: absolute;
+  top: -30px;
+  left: 60px;
+  background: #101010;
+  width: 100px;
+  height: 14px;
+  text-align: center;
+  font-size: 10px;
+  color: #c0ffd9;
+  border-radius: 25px 0px 0px 0px;
+  border: 1px solid #7c1a1a61;
+  box-shadow: 0px 0px 9px 2px #541d1d8f;
+  letter-spacing: 1px;
+}
+
+.char_occupation {
+  /* position: absolute;
+  top: 1px; */
+  font-weight: 600;
+  color: #ffff;
+  text-align: center;
+  pointer-events: none;
+}
+
+.char_card_avatar {
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+
+}
+
+.char_card_avatar img {
+  width: 50px;
+  position: fixed;
+  margin-left: 16px;
+  bottom: 34px;
+  border-radius: 15%;
+  border: 2px solid #141414;
+}
+
+svg {
+  fill: white;
+  width: 65%;
+}
+
+.char_card_about {
+  display: grid;
+  width: 100%;
+  left: 0;
+  bottom: -4px;
+  grid-auto-flow: column;
+  text-align: center;
+  position: absolute;
+}
+
+
+
+.char_item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+
+  .value {
+    font-size: 0.75rem;
+  }
+
+  .label {
+    margin-top: 0.15rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ffff;
+  }
+}
+
+.char_skills {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.75rem;
+
+  .label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ffff;
+  }
+
+  .value {
+    margin-top: 0.15rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+}
+
+.char_card_mini_icons {
+  width: 180px;
+  position: absolute;
+  height: 22px;
+  background: #000000eb;
+  bottom: -36px;
+  left: -1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #2c1515;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 3px;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.icon_mini {
+  /* fill: #141414; */
+  width: 15px;
+  height: 14px;
+}
+
+.enchant_on_ind>img {
+  border-top: 1px solid #0cc02a;
+}
+
+.enchant_off_ind>img {
+  border-top: 1px solid #c21515;
+}
+
+.label_mini {
+  font-size: 10px;
+  height: 15px;
+}

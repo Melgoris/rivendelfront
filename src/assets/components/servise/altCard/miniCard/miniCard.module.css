@@ -1,0 +1,84 @@
+.mini_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100px;
+  height: 30px;
+  pointer-events: none;
+
+}
+
+.ilvl {
+  position: absolute;
+  color: #c3a40b;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px;
+  right: 3px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.char_name {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0px -44px;
+  background: #0000005e;
+  width: 112px;
+  height: 32px;
+  text-align: center;
+}
+
+.player_gear {
+  position: absolute;
+  color: #bfffbb;
+  font-size: 10px;
+  height: 11px;
+}
+
+.p_name {
+  left: 46px;
+  top: 4px;
+}
+
+.p_gear {
+  left: 104px;
+  top: 4px;
+  color: #d59e04;
+}
+
+.image_mini {
+  /* background-image: url('../icons/frame.png'); */
+  background-size: cover;
+  width: 65px;
+  height: 65px;
+  left: -67px;
+  top: -7px;
+  position: absolute;
+  border-radius: 20px;
+  overflow: visible;
+}
+
+.image_mini img {
+  width: 30px;
+  margin-left: 86px;
+  margin-top: 26px;
+  pointer-events: none;
+}
+
+.class_ico {}
+
+.class_ico img {
+  position: absolute;
+  width: 40px;
+  margin-left: -50px;
+  margin-top: -5px;
+  pointer-events: none;
+}
+
+.bgraund {
+  position: absolute;
+  width: 125px;
+  height: 45px;
+  left: 30px;
+  top: -9px;
+}

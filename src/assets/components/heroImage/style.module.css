@@ -1,0 +1,55 @@
+.hero_hero {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: var(--dl-space-space-tenunits);
+  /* margin-bottom: var(--dl-space-space-fiveunits); */
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-tenunits);
+  background-size: cover;
+  justify-content: center;
+  background-image: url("./downHeader.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero_content_container {
+  width: 100%;
+  /* border: 2px dashed rgba(120, 120, 120, 0.4); */
+  /* height: 100px; */
+  display: flex;
+  /* max-width: var(--dl-size-size-maxcontent); */
+  /* margin-top: var(--dl-space-space-fiveunits); */
+  align-items: center;
+  /* padding-top: var(--dl-space-space-tenunits); */
+  /* padding-left: var(--dl-space-space-tripleunit); */
+  /* margin-bottom: var(--dl-space-space-fiveunits); */
+  /* padding-right: var(--dl-space-space-tripleunit); */
+  flex-direction: row;
+  /* padding-bottom: var(--dl-space-space-tenunits); */
+  justify-content: center;
+}
+
+@media(max-width: 991px) {
+  .hero_hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero_content_container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media(max-width: 479px) {
+  .hero_hero {
+    padding-top: var(--dl-space-space-fourunits);
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+
+  .hero_content_container {
+    padding-top: var(--dl-space-space-fiveunits);
+    padding-bottom: var(--dl-space-space-fiveunits);
+  }
+}
